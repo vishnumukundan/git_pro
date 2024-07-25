@@ -1,0 +1,18 @@
+plugins:
+  - - "@semantic-release/commit-analyzer"
+    - presets: conventionalcommits
+  - - "@semantic-release/release-notes-generator"
+    - presets: conventionalcommits
+  - "@semantic-release/github"
+  - - "semantic-release-pub"
+    - publishPub: false
+      updateBuildNumber: true
+  - - "@semantic-release/git"
+    - assets: ["pubspec.yaml"]
+      message: "chore(release): bump version to ${nextRelease.version}"
+branches:
+  - name: main
+  - name: beta
+    prerelease: true
+  - name: alpha
+    prerelease: true
