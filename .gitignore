@@ -41,3 +41,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+pubspec.lock
+.fvm
+android/app/key
+ios/build
+ios/Podfile.lock
+macos/Flutter/ephemeral
+macos/Flutter/Generated*.*
+linux/flutter/generated*.*
+macos/Runner.xcodeproj
+*.g.dart
+*.freezed.dart
+*.config.dart
+*.gen.dart
