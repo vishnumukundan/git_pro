@@ -1,6 +1,8 @@
 {
     "conventionalCommits.scopes": [
         "gitignore",
-        "release"
+        "release",
+        "assets",
+        "theme"
     ]
 }
